@@ -1,6 +1,9 @@
+import react from "react"
+import { useEffect } from 'react'
+import { useState } from 'react'
 
-
-export default function ShoppingList({ dogsList = [] }) {
+export default function DogList(props) {
+  const dogsList = props.dogsList
   return (
     <div className="shopping-cart">
       <h3 style={{ textAlign: "center" }}>
